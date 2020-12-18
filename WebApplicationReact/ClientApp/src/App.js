@@ -5,7 +5,9 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { FetchProduto } from './components/FetchProduto';
+import { FetchTicTacToe } from './components/FetchTicTacToe';
 import { AddProduto } from './components/AddProduto';
+
 
 import './custom.css'
 
@@ -21,6 +23,7 @@ export default class App extends Component {
         <Route path='/fetch-produto' component={FetchProduto} />
         <Route path='/add-produto' component={AddProduto} />
         <Route path='/produto/edit/:id' component={AddProduto} />
+        <Route path='/fetch-tictactoe' component={FetchTicTacToe} />
       </Layout>
     );
   }
